@@ -1,7 +1,8 @@
 name: action-example
 on:
   push:
-    - "master"
+    branches:
+      - "master"
 jobs:
   use-actions:
     runs-on: ubuntu-latest
