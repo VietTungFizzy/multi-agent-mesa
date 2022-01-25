@@ -2,7 +2,7 @@ name: event-triggers-example
 on:
   push:
     branches:
-      - "master"
+      - "!master"
       - '!foo/*/456'
     tags:
       - "*"

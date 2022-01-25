@@ -1,0 +1,11 @@
+name: action-example
+on:
+  push:
+    - "master"
+jobs:
+  use-actions:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: tiena2cva/action-emoji@v1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
